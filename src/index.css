@@ -2,95 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Valentine Retro Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 350 80% 95%;
+    --foreground: 350 60% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 350 70% 92%;
+    --card-foreground: 350 60% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 350 70% 92%;
+    --popover-foreground: 350 60% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 350 85% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 350 50% 85%;
+    --secondary-foreground: 350 60% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 350 40% 88%;
+    --muted-foreground: 350 30% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 15 90% 65%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 350 50% 80%;
+    --input: 350 50% 85%;
+    --ring: 350 85% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom Valentine colors */
+    --valentine-pink: 350 80% 70%;
+    --valentine-red: 350 85% 55%;
+    --valentine-coral: 15 85% 65%;
+    --valentine-cream: 35 60% 95%;
+    --valentine-dark: 350 60% 20%;
+    --valentine-light-pink: 350 70% 90%;
+    --valentine-checker-light: 350 60% 85%;
+    --valentine-checker-dark: 350 55% 78%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 350 70% 95%;
+    --sidebar-foreground: 350 60% 25%;
+    --sidebar-primary: 350 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 350 50% 88%;
+    --sidebar-accent-foreground: 350 60% 25%;
+    --sidebar-border: 350 50% 80%;
+    --sidebar-ring: 350 85% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 350 40% 10%;
+    --foreground: 350 30% 90%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 350 40% 15%;
+    --card-foreground: 350 30% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 350 40% 15%;
+    --popover-foreground: 350 30% 90%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 350 75% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 350 30% 25%;
+    --secondary-foreground: 350 30% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 350 30% 20%;
+    --muted-foreground: 350 20% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 15 70% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 350 30% 25%;
+    --input: 350 30% 25%;
+    --ring: 350 75% 55%;
+
+    --valentine-pink: 350 60% 50%;
+    --valentine-red: 350 70% 45%;
+    --valentine-coral: 15 65% 50%;
+    --valentine-cream: 35 40% 20%;
+    --valentine-dark: 350 40% 85%;
+    --valentine-light-pink: 350 50% 25%;
+    --valentine-checker-light: 350 40% 22%;
+    --valentine-checker-dark: 350 35% 18%;
+
+    --sidebar-background: 350 40% 12%;
+    --sidebar-foreground: 350 30% 90%;
+    --sidebar-primary: 350 75% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 350 30% 20%;
+    --sidebar-accent-foreground: 350 30% 90%;
+    --sidebar-border: 350 30% 25%;
+    --sidebar-ring: 350 75% 55%;
   }
 }
 
@@ -100,6 +113,117 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-quicksand;
+  }
+}
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .bg-checker {
+    background-image: 
+      linear-gradient(45deg, hsl(var(--valentine-checker-dark)) 25%, transparent 25%),
+      linear-gradient(-45deg, hsl(var(--valentine-checker-dark)) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, hsl(var(--valentine-checker-dark)) 75%),
+      linear-gradient(-45deg, transparent 75%, hsl(var(--valentine-checker-dark)) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-color: hsl(var(--valentine-checker-light));
+  }
+
+  .pixel-border {
+    box-shadow: 
+      4px 0 0 0 hsl(var(--valentine-red)),
+      -4px 0 0 0 hsl(var(--valentine-red)),
+      0 4px 0 0 hsl(var(--valentine-red)),
+      0 -4px 0 0 hsl(var(--valentine-red)),
+      4px 4px 0 0 hsl(var(--valentine-dark)),
+      -4px -4px 0 0 hsl(var(--valentine-light-pink)),
+      -4px 4px 0 0 hsl(var(--valentine-dark)),
+      4px -4px 0 0 hsl(var(--valentine-light-pink));
+  }
+
+  .pixel-btn {
+    @apply font-pixel text-xs px-6 py-3 uppercase tracking-wider;
+    background: hsl(var(--valentine-cream));
+    border: 3px solid hsl(var(--valentine-dark));
+    box-shadow: 
+      3px 3px 0 0 hsl(var(--valentine-dark)),
+      inset -2px -2px 0 0 hsl(var(--valentine-checker-dark));
+    transition: all 0.1s;
+  }
+
+  .pixel-btn:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 
+      2px 2px 0 0 hsl(var(--valentine-dark)),
+      inset -2px -2px 0 0 hsl(var(--valentine-checker-dark));
+  }
+
+  .pixel-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 
+      0 0 0 0 hsl(var(--valentine-dark)),
+      inset -2px -2px 0 0 hsl(var(--valentine-checker-dark));
+  }
+
+  .heart-float {
+    animation: heartFloat 3s ease-in-out infinite;
+  }
+
+  @keyframes heartFloat {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+
+  .pulse-love {
+    animation: pulseLove 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulseLove {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .ticket-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ticket-shine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255,255,255,0.3) 50%,
+      transparent 100%
+    );
+    transform: rotate(30deg);
+    animation: ticketShine 3s ease-in-out infinite;
+  }
+
+  @keyframes ticketShine {
+    0% { transform: translateX(-100%) rotate(30deg); }
+    100% { transform: translateX(100%) rotate(30deg); }
   }
 }
