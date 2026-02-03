@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import SnakeGame from '@/components/SnakeGame';
 import ValentineQuestion from '@/components/ValentineQuestion';
 import ValentineTicket from '@/components/ValentineTicket';
-import heart1 from '@/assets/heart1.png';
-import heart3 from '@/assets/heart3.png';
+import heart1 from '@/assets/k.png';
+import heart3 from '@/assets/v.png';
 
 type GameState = 'game' | 'question' | 'ticket';
 
