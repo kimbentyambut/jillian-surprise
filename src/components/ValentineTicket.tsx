@@ -72,13 +72,13 @@ const ValentineTicket: React.FC = () => {
                   <div>
                     <p className="font-pixel text-valentine-dark text-[8px] opacity-70">DATE</p>
                     <p className="font-quicksand text-valentine-dark text-base font-semibold">
-                      Feb 14, 2025
+                      Feb 14, 2026
                     </p>
                   </div>
                   <div>
                     <p className="font-pixel text-valentine-dark text-[8px] opacity-70">SPOT</p>
                     <p className="font-quicksand text-valentine-dark text-base font-semibold">
-                      TBA ✨
+                      Steak Spot! ✨
                     </p>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const ValentineTicket: React.FC = () => {
               {/* Romantic message */}
               <div className="text-center pt-4 border-t-2 border-dashed border-valentine-pink">
                 <p className="font-quicksand text-valentine-dark text-sm italic leading-relaxed">
-                  "Can't wait to spend this special day with you, my love. You're the best thing that ever happened to me."
+                  "Can't wait to spend another valentine with you! Many many more valentine years."
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ const ValentineTicket: React.FC = () => {
           {/* Ticket Footer */}
           <div className="bg-valentine-red px-6 py-3 flex items-center justify-center">
             <p className="font-pixel text-valentine-cream text-[8px]">
-              💕 ADMIT ONE SPECIAL PERSON 💕
+              💕 ADMIT ONE SMELLY PERSON 💕
             </p>
           </div>
         </div>
@@ -127,8 +127,8 @@ const ValentineTicket: React.FC = () => {
       {/* Bottom message */}
       <div className="text-center space-y-2">
         <p className="font-quicksand text-valentine-dark text-base">
-          See you there, beautiful! 💕
-        </p>
+          See you on February 14 2026 my babyy! 💕
+        </p> 
         <p className="font-pixel text-valentine-red text-[10px] opacity-70">
           - With all my love
         </p>
