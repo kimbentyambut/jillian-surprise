@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/jillian-surprise", // 👈 REQUIRED for GitHub Pages
+  base: "/jillian-surprise/", // 👈 REQUIRED for GitHub Pages
 
   server: {
     host: "::",
