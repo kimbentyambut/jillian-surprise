@@ -184,7 +184,7 @@ const SnakeGame: React.FC<SnakeGameProps> = ({ onGameComplete }) => {
           {[...Array(5)].map((_, i) => (
             <div 
               key={i} 
-              className={`w-6 h-6 ${i < score ? 'opacity-100' : 'opacity-30'}`}
+              className={`w-10 h-10  ${i < score ? 'opacity-100' : 'opacity-30'}`}
             >
               <img 
                 src={heartImages[i]} 
