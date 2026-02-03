@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import heart1 from '@/assets/heart1.png';
-import heart2 from '@/assets/heart2.png';
-import heart3 from '@/assets/heart3.png';
-import heart4 from '@/assets/heart4.png';
-import heart5 from '@/assets/heart5.png';
+import heart1 from '@/assets/k.png';
+import heart2 from '@/assets/e.png';
+import heart3 from '@/assets/v.png';
+import heart4 from '@/assets/i.png';
+import heart5 from '@/assets/n.png';
 
 const GRID_SIZE = 20;
 const CELL_SIZE = 20;
