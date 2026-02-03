@@ -47,7 +47,7 @@ const ValentineQuestion: React.FC<ValentineQuestionProps> = ({ onAccept }) => {
 
         {/* Sweet message for Charlize */}
         <p className="font-quicksand text-valentine-dark text-center text-base max-w-xs leading-relaxed">
-          Charlize Jillian Carta, you make my heart skip a beat every single day 💕
+          My babyy jilleyn, you always make me feel special! 💕
         </p>
 
         {/* Buttons - Both say YES! */}

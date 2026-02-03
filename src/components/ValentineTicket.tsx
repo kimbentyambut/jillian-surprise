@@ -5,6 +5,7 @@ import heart3 from '@/assets/heart3.png';
 import heart4 from '@/assets/heart4.png';
 import heart5 from '@/assets/heart5.png';
 import loveCat from '@/assets/love-cat.png';
+import loveCats from '@/assets/jill.png';
 
 const ValentineTicket: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const ValentineTicket: React.FC = () => {
       {/* Celebration text */}
       <div className="text-center">
         <p className="font-pixel text-valentine-red text-xs sparkle">
-          🎉 SHE SAID YES! 🎉
+          🎉 SHE SAID YES HELLYEAH!! 🎉
         </p>
       </div>
 
@@ -52,7 +53,7 @@ const ValentineTicket: React.FC = () => {
               {/* Cat mascot */}
               <div className="flex justify-center">
                 <img 
-                  src={loveCat} 
+                  src={loveCats} 
                   alt="Love mascot" 
                   className="w-24 h-24 object-contain heart-float"
                 />
