@@ -67,10 +67,10 @@ const Index: React.FC = () => {
             {/* Title */}
             <div className="text-center space-y-2">
               <h1 className="font-pixel text-valentine-red text-lg">
-                💕 Love Quest 💕
+                💕 Kevin's Valentine Challenge Yeah! 💕
               </h1>
               <p className="font-quicksand text-valentine-dark text-sm">
-                A special game for a special someone
+                A special game for Charlize Jillian Carta
               </p>
             </div>
 
@@ -79,7 +79,7 @@ const Index: React.FC = () => {
 
             {/* Hint */}
             <p className="font-quicksand text-valentine-dark/70 text-xs text-center">
-              Collect all 5 hearts to reveal a surprise!
+              Collect all my name letters to reveal a surprise!
             </p>
           </div>
         )}

@@ -244,7 +244,7 @@ const SnakeGame: React.FC<SnakeGameProps> = ({ onGameComplete }) => {
         {(!gameStarted || gameOver) && (
           <div className="absolute inset-0 bg-valentine-cream/90 flex flex-col items-center justify-center gap-4">
             <p className="font-pixel text-valentine-dark text-xs text-center px-4">
-              {gameOver ? 'GAME OVER!' : 'Collect 5 hearts!'}
+              {gameOver ? 'GAME OVER!' : 'Collect my name!'}
             </p>
             <p className="font-pixel text-valentine-red text-[10px]">
               {gameOver ? 'Try again?' : 'Press any key or tap to start'}
