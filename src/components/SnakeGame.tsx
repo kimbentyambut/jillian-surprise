@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import heart1 from '@/assets/k.png';
-import heart2 from '@/assets/e.png';
-import heart3 from '@/assets/v.png';
-import heart4 from '@/assets/i.png';
-import heart5 from '@/assets/n.png';
+import heart1 from '@/assets/heart1.png';
+import heart2 from '@/assets/heart2.png';
+import heart3 from '@/assets/heart3.png';
+import heart4 from '@/assets/heart4.png';
+import heart5 from '@/assets/heart5.png';
 
 const GRID_SIZE = 20;
 const CELL_SIZE = 20;
@@ -244,10 +244,10 @@ const SnakeGame: React.FC<SnakeGameProps> = ({ onGameComplete }) => {
         {(!gameStarted || gameOver) && (
           <div className="absolute inset-0 bg-valentine-cream/90 flex flex-col items-center justify-center gap-4">
             <p className="font-pixel text-valentine-dark text-xs text-center px-4">
-              {gameOver ? 'GAME OVER!' : 'Collect 5 pictures natin!'}
+              {gameOver ? 'GAME OVER!' : 'Collect 5 hearts!'}
             </p>
             <p className="font-pixel text-valentine-red text-[10px]">
-              {gameOver ? 'Try again?' : 'Press arrow keys'}
+              {gameOver ? 'Try again?' : 'Press any key or tap to start'}
             </p>
             <button 
               onClick={resetGame}

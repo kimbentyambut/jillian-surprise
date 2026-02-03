@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import SnakeGame from '@/components/SnakeGame';
 import ValentineQuestion from '@/components/ValentineQuestion';
 import ValentineTicket from '@/components/ValentineTicket';
-import heart1 from '@/assets/k.png';
-import heart3 from '@/assets/v.png';
+import heart1 from '@/assets/heart1.png';
+import heart3 from '@/assets/heart3.png';
 
 type GameState = 'game' | 'question' | 'ticket';
 
@@ -67,10 +67,10 @@ const Index: React.FC = () => {
             {/* Title */}
             <div className="text-center space-y-2">
               <h1 className="font-pixel text-valentine-red text-lg">
-                💕 Valentine for my Jillian 💕
+                💕 Love Quest 💕
               </h1>
               <p className="font-quicksand text-valentine-dark text-sm">
-                A special game for Charlize Jillian Carta
+                A special game for a special someone
               </p>
             </div>
 
@@ -79,7 +79,7 @@ const Index: React.FC = () => {
 
             {/* Hint */}
             <p className="font-quicksand text-valentine-dark/70 text-xs text-center">
-              Collect all 5 of us to reveal a surprise!
+              Collect all 5 hearts to reveal a surprise!
             </p>
           </div>
         )}
